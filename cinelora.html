@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CINELORA AI — Free AI image and video generator. Turn text into stunning visuals in seconds. Try for free." />
+  <meta name="keywords" content="AI image generator, AI video generator, text to image, text to video, free AI generator, generate images from text, AI content creator, cinelora" />
+  <meta name="author" content="Larysa S." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="CINELORA AI — Free AI Image & Video Generator" />
+  <meta property="og:description" content="Turn text into stunning images and videos in seconds. Free to start. No credit card required." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://cinelora.ai" />
+  <meta property="og:image" content="https://cinelora.ai/og-image.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="CINELORA AI — Free AI Image & Video Generator" />
+  <meta name="twitter:description" content="Turn text into stunning images and videos in seconds. Free to start." />
+  <meta name="twitter:image" content="https://cinelora.ai/og-image.jpg" />
+
+  <title>CINELORA AI — Free AI Image & Video Generator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Syne:wght@400;500;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="cinelora_styles.css" />
+</head>
+<body>
+
+<!-- ████████████████████████ NAVIGATION ████████████████████████ -->
+<nav role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <div class="nav-left">
+      <a href="#home" class="nav-logo">CINE<span>LORA</span> AI</a>
+      <button class="nav-hamburger" aria-label="Open menu" onclick="document.getElementById('mobile-menu').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#how-it-works">How it works</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="#" class="btn btn-outline">Sign in</a>
+      <a href="#" class="btn btn-primary">Start Free</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile sidebar -->
+<div id="mobile-menu" class="mobile-menu" role="dialog" aria-label="Mobile navigation">
+  <div class="mobile-menu-overlay" onclick="document.getElementById('mobile-menu').classList.remove('open')"></div>
+  <div class="mobile-menu-panel">
+    <button class="mobile-menu-close" aria-label="Close menu" onclick="document.getElementById('mobile-menu').classList.remove('open')">✕</button>
+    <ul>
+      <li><a href="#features" onclick="document.getElementById('mobile-menu').classList.remove('open')">Features</a></li>
+      <li><a href="#how-it-works" onclick="document.getElementById('mobile-menu').classList.remove('open')">How it works</a></li>
+      <li><a href="#pricing" onclick="document.getElementById('mobile-menu').classList.remove('open')">Pricing</a></li>
+      <li><a href="#faq" onclick="document.getElementById('mobile-menu').classList.remove('open')">FAQ</a></li>
+    </ul>
+    <div class="mobile-menu-cta">
+      <a href="#" class="btn btn-outline" style="width:100%; justify-content:center;">Sign in</a>
+      <a href="#" class="btn btn-primary" style="width:100%; justify-content:center;">Start Free</a>
+    </div>
+  </div>
+</div>
+
+<!-- ████████████████████████ HERO ████████████████████████ -->
+<section id="home" class="hero" aria-labelledby="hero-heading">
+  <div class="hero-bg" role="presentation"></div>
+  <div class="container">
+    <div class="hero-content">
+      <h1 id="hero-heading">
+        Your ideas deserve to become
+        <span class="line-gold">something greater.</span>
+      </h1>
+      <p>
+        CINELORA AI turns your thoughts into stunning images and videos.
+        Create incredible content easily, with quality and speed.
+      </p>
+      <div class="hero-actions">
+        <a href="#" class="btn btn-primary" role="button">Start Creating — It's Free</a>
+        <a href="#how-it-works" class="btn btn-outline" role="button">See How It Works</a>
+      </div>
+      <p class="hero-scroll-hint" aria-hidden="true">Scroll to explore</p>
+    </div>
+
+    <!-- Floating visual frames (decorative) -->
+    <div class="hero-visual" aria-hidden="true">
+      <div class="frame">
+        <div class="frame-img">[ AI Generated Image ]</div>
+        <div class="frame-label"><span class="pulse-dot"></span>Cinematic Style · 4.2s</div>
+      </div>
+      <div class="frame">
+        <div class="frame-img">[ AI Generated Video ]</div>
+        <div class="frame-label"><span class="pulse-dot"></span>Video · 8s · 1080p</div>
+      </div>
+      <div class="frame">
+        <div class="frame-img">[ AI Generated Image ]</div>
+        <div class="frame-label"><span class="pulse-dot"></span>Anime Style · 3.7s</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ████████████████████████ STATS ████████████████████████ -->
+<section class="stats-bar" aria-label="Platform statistics">
+  <div class="container">
+    <dl class="stats-grid">
+      <div class="stat-item">
+        <dt class="stat-label">Images Generated</dt>
+        <dd class="stat-num">2.4M+</dd>
+      </div>
+      <div class="stat-item">
+        <dt class="stat-label">Videos Created</dt>
+        <dd class="stat-num">180K+</dd>
+      </div>
+      <div class="stat-item">
+        <dt class="stat-label">Active Users</dt>
+        <dd class="stat-num">45K+</dd>
+      </div>
+      <div class="stat-item">
+        <dt class="stat-label">Avg. Generation Time</dt>
+        <dd class="stat-num">4.1s</dd>
+      </div>
+    </dl>
+  </div>
+</section>
+
+<!-- ████████████████████████ FEATURES ████████████████████████ -->
+<section id="features" class="section" aria-labelledby="features-heading">
+  <div class="container">
+    <span class="label">What You Can Do</span>
+    <h2 id="features-heading">Everything you need to create</h2>
+    <div class="divider"></div>
+    <p>
+      From generating a single image to producing full short-form video content —
+      CINELORA AI gives you a complete creative toolkit, right in your browser.
+    </p>
+
+    <div class="features-grid" role="list">
+
+      <article class="feature-card" role="listitem">
+        <div class="feature-icon" aria-hidden="true">🎨</div>
+        <h3>Text-to-Image</h3>
+        <p>
+          Describe your vision in words and watch it become a
+          high-resolution image in seconds.
+          Choose from realistic, anime, 3D, and cinematic styles. Download as <code>.png</code>, <code>.jpg</code> or <code>.webp</code>.
+        </p>
+      </article>
+
+      <article class="feature-card" role="listitem">
+        <div class="feature-icon" aria-hidden="true">🎬</div>
+        <h3>Text-to-Video</h3>
+        <p>
+          Generate short videos up to 12 seconds from a simple text prompt —
+          or use an existing image as your starting frame. Output as <code>.mp4</code> or <code>.webm</code>.
+        </p>
+      </article>
+
+      <article class="feature-card" role="listitem">
+        <div class="feature-icon" aria-hidden="true">🗂️</div>
+        <h3>Personal Gallery</h3>
+        <p>
+          All your creations in one place. Browse, download and share them whenever you're ready.
+        </p>
+      </article>
+
+      <article class="feature-card" role="listitem">
+        <div class="feature-icon" aria-hidden="true">🔗</div>
+        <h3>Share Anywhere</h3>
+        <p>
+          Create public or unlisted links for any work.
+          Share to socials in one click.
+        </p>
+      </article>
+
+      <article class="feature-card" role="listitem">
+        <div class="feature-icon" aria-hidden="true">🌍</div>
+        <h3>Global Gallery</h3>
+        <p>
+          Browse creations from the entire CINELORA community.
+          Get inspired by what others build.
+        </p>
+      </article>
+
+      <article class="feature-card" role="listitem">
+        <div class="feature-icon" aria-hidden="true">⚡</div>
+        <h3>Smart Prompting</h3>
+        <p>
+          Save prompt templates, reuse past prompts, and generate
+          up to 4 variants at once.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ████████████████████████ HOW IT WORKS ████████████████████████ -->
+<section id="how-it-works" class="section" style="background: var(--bg-2);" aria-labelledby="how-heading">
+  <div class="container">
+    <span class="label">Process</span>
+    <h2 id="how-heading">Four steps to your next masterpiece</h2>
+    <div class="divider"></div>
+
+    <div class="how-grid" role="list">
+      <div class="how-card" role="listitem">
+        <div class="how-num" aria-hidden="true">1</div>
+        <h4>Write your prompt</h4>
+        <p>Describe the scene, mood, and style in plain language. No technical knowledge needed.</p>
+      </div>
+      <div class="how-card" role="listitem">
+        <div class="how-num" aria-hidden="true">2</div>
+        <h4>Choose parameters</h4>
+        <p>Select image or video, pick a style, set size, duration, and number of variants.</p>
+      </div>
+      <div class="how-card" role="listitem">
+        <div class="how-num" aria-hidden="true">3</div>
+        <h4>Generate &amp; review</h4>
+        <p>Watch the AI work in real time. Your result is ready in seconds.</p>
+      </div>
+      <div class="how-card" role="listitem">
+        <div class="how-num" aria-hidden="true">4</div>
+        <h4>Save &amp; share</h4>
+        <p>Download your creation or share it directly from your gallery with one click.</p>
+      </div>
+    </div>
+
+    <blockquote cite="#" style="margin-top: 60px; max-width: 600px;">
+      "Bring your ideas to life with CINELORA AI — easily, quickly, and exactly as you imagined."
+    </blockquote>
+  </div>
+</section>
+
+<!-- ████████████████████████ PRICING ████████████████████████ -->
+<section id="pricing" class="section" style="background: var(--bg-2);" aria-labelledby="pricing-heading">
+  <div class="container">
+    <span class="label">Plans &amp; Pricing</span>
+    <h2 id="pricing-heading">Start free. Scale when ready.</h2>
+    <div class="divider"></div>
+    <p>No credit card required to get started. Upgrade any time as your creative needs grow.</p>
+
+    <div class="pricing-grid" role="list">
+
+      <!-- FREE -->
+      <div class="pricing-card" role="listitem" aria-label="Free plan">
+        <span class="label">Free</span>
+        <p class="pricing-desc">For anyone just starting out with AI creation.</p>
+        <div class="price">$0 <span>/ month</span></div>
+        <ul class="feature-list" aria-label="Free plan features">
+          <li>20 image generations / month</li>
+          <li>5 video generations / month</li>
+          <li>Up to 4-second videos</li>
+          <li>Standard resolution outputs</li>
+          <li>Personal gallery (1 GB)</li>
+          <li>Public &amp; unlisted sharing</li>
+        </ul>
+        <a href="#" class="btn btn-outline" style="width:100%; justify-content:center;">Get Started Free</a>
+      </div>
+
+      <!-- PRO -->
+      <div class="pricing-card featured" role="listitem" aria-label="Pro plan — Most Popular">
+        <span class="pricing-badge" aria-label="Most popular">Most Popular</span>
+        <span class="label">Pro</span>
+        <p class="pricing-desc">For creators who need power and volume.</p>
+        <div class="price">$19 <span>/ month</span></div>
+        <ul class="feature-list" aria-label="Pro plan features">
+          <li>Unlimited image generations</li>
+          <li>100 video generations / month</li>
+          <li>Up to 12-second videos</li>
+          <li>HD &amp; 4K resolution outputs</li>
+          <li>Gallery up to 50 GB</li>
+          <li>Priority generation queue</li>
+          <li>All styles + early access to new ones</li>
+        </ul>
+        <a href="#" class="btn btn-primary" style="width:100%; justify-content:center;">Start Pro Trial</a>
+      </div>
+
+      <!-- CREDITS -->
+      <div class="pricing-card" role="listitem" aria-label="Credits plan">
+        <span class="label">Credits</span>
+        <p class="pricing-desc">Pay only for what you use — no subscription needed.</p>
+        <div class="price">$9 <span>/ 100 credits</span></div>
+        <ul class="feature-list" aria-label="Credits plan features">
+          <li>1 credit = 1 image generation</li>
+          <li>5 credits = 1 video generation</li>
+          <li>Credits never expire</li>
+          <li>Same quality as Pro tier</li>
+          <li>Flexible top-up any time</li>
+          <li>No monthly commitment</li>
+        </ul>
+        <a href="#" class="btn btn-outline" style="width:100%; justify-content:center;">Buy Credits</a>
+      </div>
+
+    </div>
+
+    <!-- Comparison table -->
+    <h3 style="margin-top: 80px; margin-bottom: 8px; font-size: 1.3rem;">Compare plans</h3>
+    <table class="comparison-table" aria-label="Plan comparison table">
+      <thead>
+        <tr>
+          <th scope="col">Feature</th>
+          <th scope="col">Free</th>
+          <th scope="col">Pro</th>
+          <th scope="col">Credits</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Image generation</td>
+          <td>20 / mo</td>
+          <td>Unlimited</td>
+          <td>Pay-per-use</td>
+        </tr>
+        <tr>
+          <td>Video generation</td>
+          <td>5 / mo</td>
+          <td>100 / mo</td>
+          <td>Pay-per-use</td>
+        </tr>
+        <tr>
+          <td>Max video length</td>
+          <td>4 sec</td>
+          <td>12 sec</td>
+          <td>12 sec</td>
+        </tr>
+        <tr>
+          <td>4K resolution</td>
+          <td><span class="cross" aria-label="Not included">✗</span></td>
+          <td><span class="check" aria-label="Included">✓</span></td>
+          <td><span class="check" aria-label="Included">✓</span></td>
+        </tr>
+        <tr>
+          <td>Priority queue</td>
+          <td><span class="cross" aria-label="Not included">✗</span></td>
+          <td><span class="check" aria-label="Included">✓</span></td>
+          <td><span class="cross" aria-label="Not included">✗</span></td>
+        </tr>
+        <tr>
+          <td>Dark / Light theme</td>
+          <td><span class="check" aria-label="Included">✓</span></td>
+          <td><span class="check" aria-label="Included">✓</span></td>
+          <td><span class="check" aria-label="Included">✓</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ████████████████████████ TESTIMONIALS ████████████████████████ -->
+<section class="section" aria-labelledby="testimonials-heading">
+  <div class="container">
+    <span class="label">What Creators Say</span>
+    <h2 id="testimonials-heading">Loved by everyone with an idea.</h2>
+    <div class="divider"></div>
+
+    <div class="testimonials-grid" role="list">
+
+      <div class="testimonial-card" role="listitem">
+        <blockquote>
+          Needed a visual for my reel - no ideas, no budget. Asked CINELORA AI, got exactly what I wanted in 10 seconds. Posted it, went viral. Done. 😭✨
+        </blockquote>
+        <div class="testimonial-author">
+          <div class="author-avatar" aria-hidden="true">M</div>
+          <div>
+            <div class="author-name">@maya.creates</div>
+            <div class="author-role">Lifestyle Creator · 52K followers</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card" role="listitem">
+        <blockquote>
+          Every detail, every texture - exactly as I imagined. I didn't have to regenerate 50 times to get one decent result.
+        </blockquote>
+        <div class="testimonial-author">
+          <div class="author-avatar" aria-hidden="true">A</div>
+          <div>
+            <div class="author-name">Alex T.</div>
+            <div class="author-role">Student & YouTuber</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card" role="listitem">
+        <blockquote>
+          I run a small café and handle all social media myself. CINELORA AI creates all my visuals and short videos now - my Instagram has never looked this good.
+        </blockquote>
+        <div class="testimonial-author">
+          <div class="author-avatar" aria-hidden="true">N</div>
+          <div>
+            <div class="author-name">Nina B.</div>
+            <div class="author-role">Small Business Owner</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ████████████████████████ FAQ ████████████████████████ -->
+<section id="faq" class="section" style="background: var(--bg-2);" aria-labelledby="faq-heading">
+  <div class="container">
+    <span class="label">Questions &amp; Answers</span>
+    <h2 id="faq-heading">FAQ</h2>
+    <div class="divider"></div>
+
+    <div class="faq-list" role="list">
+
+      <details role="listitem">
+        <summary>Do I need a credit card to sign up?</summary>
+        <div class="faq-answer">
+          <p>No. The Free plan requires only an email address and password. You only need payment details when upgrading to Pro or purchasing a credit pack.</p>
+        </div>
+      </details>
+
+      <details role="listitem">
+        <summary>What file formats does CINELORA AI support for output?</summary>
+        <div class="faq-answer">
+          <p>Images are exported as <code>.png</code>, <code>.jpg</code> or <code>.webp</code>. Videos are exported as <code>.mp4</code> or <code>.webm</code>. These formats are supported across all major browsers and devices.</p>
+        </div>
+      </details>
+
+      <details role="listitem">
+        <summary>How long does generation take?</summary>
+        <div class="faq-answer">
+          <p>Image generation typically takes <strong>3–6 seconds</strong>. Video generation varies by duration: 4-second clips average around 20–30 seconds, and 12-second clips can take up to a minute. Pro users get priority queue access, so wait times are shorter.</p>
+        </div>
+      </details>
+
+      <details role="listitem">
+        <summary>Can I generate multiple variants at once?</summary>
+        <div class="faq-answer">
+          <p>Yes! You can generate up to <strong>4 variants</strong> from a single prompt. Each variant uses a separate generation credit.</p>
+        </div>
+      </details>
+
+      <details role="listitem">
+        <summary>Is my generated content private by default?</summary>
+        <div class="faq-answer">
+          <p>Yes. All newly generated content defaults to <strong>Private</strong>. You can change visibility to <em>Unlisted</em> (shareable by direct link) or <em>Public</em> (appears in the global Explore gallery) at any time from the item detail view.</p>
+        </div>
+      </details>
+
+      <details role="listitem">
+        <summary>What happens if I run out of credits mid-generation?</summary>
+        <div class="faq-answer">
+          <p>The platform checks your credit balance <strong>before</strong> accepting a generation request. If you don't have enough credits, you'll be prompted to top up or upgrade your plan. No partial charges are made.</p>
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<!-- ████████████████████████ CTA ████████████████████████ -->
+<section class="cta-section" aria-labelledby="cta-heading">
+  <div class="container">
+    <span class="label">Ready to Begin?</span>
+    <h2 id="cta-heading">Start creating today.<br /><em>No card required.</em></h2>
+    <p>Join 45,000+ creators already turning their words into cinematic content.</p>
+    <div class="cta-actions">
+      <a href="#" class="btn btn-primary" role="button">Create Your First Image — Free</a>
+      <a href="#features" class="btn btn-outline" role="button">Explore Features</a>
+    </div>
+  </div>
+</section>
+
+<!-- ████████████████████████ FOOTER ████████████████████████ -->
+<footer role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <a href="#home" class="nav-logo">CINE<span>LORA</span> AI</a>
+        <!-- Newsletter form with input, label, button -->
+        <form class="newsletter-form" action="#" method="post" aria-label="Newsletter signup">
+          <div>
+            <label for="email-newsletter" style="display:block; font-size:0.75rem; color:var(--text-mute); margin-bottom:6px; text-transform:uppercase; letter-spacing:0.1em; font-weight:700;">Email address</label>
+            <div class="newsletter-row">
+              <input type="email" id="email-newsletter" name="email" placeholder="your@email.com" autocomplete="email" required />
+              <button type="submit" class="btn btn-primary" style="padding: 12px 20px;">Subscribe</button>
+            </div>
+          </div>
+        </form>
+        <small>No spam. Unsubscribe any time.</small>
+      </div>
+
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#">Changelog</a></li>
+          <li><a href="#">Roadmap</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">Prompt Guide</a></li>
+          <li><a href="#">API Reference</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#">Status</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="#">Content Policy</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 CINELORA AI. All rights reserved. Made with ♥ by Larysa S.</p>
+      <address style="font-style: normal;">
+        <small>Questions? <a href="mailto:hello@cinelora.ai">hello@cinelora.ai</a></small>
+      </address>
+      <div class="social-links" aria-label="Social media links">
+        <a href="#" aria-label="Twitter / X">𝕏</a>
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="YouTube">YT</a>
+        <a href="#" aria-label="Discord">DC</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
